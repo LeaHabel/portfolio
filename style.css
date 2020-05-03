@@ -1,0 +1,186 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup,
+var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  { margin: 0; padding: 0; border: 0; font-size: 100%;  }
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+ ul { list-style: none;}
+a {text-decoration: none; color: rgb(95, 95, 95)}
+a:hover {color: black}
+
+.fixed {position: fixed;}
+.absolute {position: absolute;}
+.relative {position: relative;}
+
+.BG {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  height: 2em;
+}
+.borderBox {
+  border-width: 1px;
+  border-style: solid;
+  padding: 40px;
+}
+.line {
+  height: 1px;
+}
+.marginLine{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.borderColorBlack { border-color: black}
+
+ /*Start serif*/ h1{ font-family: 'Frank Ruhl Libre', serif;}
+/*Head hervorg*/ h2{font-weight: 700;font-size: 1.5em; line-height: 2.5em} 
+/*Head*/ h3{font-weight: 700; font-size: 1.1em;} 
+/*kursiv*/ h4{font-weight: 500; font-size: 1.1em; font-style: oblique; /* margin-top: 1em */} 
+/*CAPS:Nav*/ h5{font-weight: 500; font-size: 1.0em; text-transform: uppercase;} 
+/*CAPS:TeaserThema*/ h6{font-weight: 600; font-size: 1em; text-transform: uppercase;} 
+/*CAPS:FtHead*/ h6 .txFtHead{font-weight: 600; font-size: 0.8em; text-transform: uppercase; line-height: 4em;} 
+/*kursiv:Quelle*/ p .txOrigin{font-weight: 400; font-size: 0.9em; font-style: oblique;} 
+/*Ft hervorg*/ h9{font-weight: 700; font-size: 1em;}
+p{font-weight: 400; font-size: 1em;}
+
+
+
+
+.mainColor1, .designColor { background-color: #74160D;}
+.mainColor2, .codeColor { background-color: #481323;}
+.mainColor3, .fotografieColor { background-color: #9A3B2F;}
+.mainColor4, .sonstigesColor { background-color: #844913;}
+.colorWhite {background-color: white;}
+
+.width1 { width: 16.6% }
+.width2 { width: 32.8% }
+.width3 { width: 49.8% }
+.width4 { width: 66.4% }
+.width50 { width: 50% }
+
+.left1 { left: 16.6% }
+.left2 { left: 32.8% }
+.left3 { left: 49.8% }
+.left4 { left: 66.4% }
+.left5 { left: 83% }
+.left6 { left: 99.6% }
+
+.z100{ z-index: 100;} /* Nav */
+
+
+  /*   --------NAV--------   */
+.navContainer{
+  z-index: 100;
+  background-color: white;
+  color: white;
+  width: 100vw;
+  height: 60px;
+}
+#navbox {
+  display: none;
+  width: 16.6%;
+  z-index: 100;
+  top: 18px;
+}
+.navItem{ 
+  position: fixed;
+  z-index: 100;
+  top: 25px;
+ 
+}
+.navItem a {  
+
+}
+.txNavHeader {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em; /* = h5 */
+  padding-left: 7px;
+}
+
+
+/*   --------START--------   */
+  #startBox {
+    position: absolute;
+    top: 10%;
+   
+  }
+  #startText2{ 
+    display: none; 
+  }
+ #startText3{
+    display: none;
+  }
+
+  
+/*   --------INTRO--------   */
+
+
+/*   --------PORTFOLIO--------   */
+
+/* Square responsive: 
+https://jsfiddle.net/webtiki/MpXYr/5/ */
+.square {
+  color: white;
+  float:left;
+  position: relative;
+  width: 32.8vw;
+  padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+  overflow:hidden;
+  border: 0px solid #fff; /* Abstaende zwischen Teaser Bildern */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: 1px solid white; /* Innere Kontur */
+  outline-offset: -15px; /* Innere Kontur */
+}
+.content {
+  position:absolute;
+  height:100%; /* = 100% - 2*5% padding */
+  width:100%; /* = 100% - 2*5% padding */
+}
+/*  For responsive images */
+.content .rs{
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  
+}
+.square:hover img{
+opacity: 0.1;
+}
+.designCodeColor {
+    background: linear-gradient(to right,  #74160D 0%,#74160D 50%,#481323 50%,#481323 100%);
+}
+.teaserTopic {
+  left: 25px;
+}
+.teaserTopic2 {
+  left: calc(50% + 10px);
+}
+.teaserPosLeft {
+  left: 13%;
+}
+.teaserHead {
+  top: 50%;
+}
+.teaserHead2 {
+  top: calc(50% + 1.6em);
+}
+
+
+
+
