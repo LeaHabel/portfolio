@@ -7,6 +7,14 @@ header, hgroup, menu, nav, section, summary, time, mark, audio, video
 body, html {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  
+  -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto; /*TODO funktioniert nicht*/
 }
  ul { list-style: none;}
 a {text-decoration: none; color: rgb(95, 95, 95)}
@@ -15,6 +23,8 @@ a:hover {color: black}
 .fixed {position: fixed;}
 .absolute {position: absolute;}
 .relative {position: relative;}
+.flexColumn {position: flex; flex-direction: column;}
+.floatLeft{float:left;}
 
 .BG {
   height: 100%;
@@ -37,6 +47,14 @@ a:hover {color: black}
 .marginLine{
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
+}
+.marginHead{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .borderColorBlack { border-color: black}
@@ -46,13 +64,12 @@ a:hover {color: black}
 /*Head*/ h3{font-weight: 700; font-size: 1.1em;} 
 /*kursiv*/ h4{font-weight: 500; font-size: 1.1em; font-style: oblique; /* margin-top: 1em */} 
 /*CAPS:Nav*/ h5{font-weight: 500; font-size: 1.0em; text-transform: uppercase;} 
-/*CAPS:TeaserThema*/ h6{font-weight: 600; font-size: 1em; text-transform: uppercase;} 
-/*CAPS:FtHead*/ h6 .txFtHead{font-weight: 600; font-size: 0.8em; text-transform: uppercase; line-height: 4em;} 
-/*kursiv:Quelle*/ p .txOrigin{font-weight: 400; font-size: 0.9em; font-style: oblique;} 
-/*Ft hervorg*/ h9{font-weight: 700; font-size: 1em;}
-p{font-weight: 400; font-size: 1em;}
+/*CAPS:TeaserThema*/ h6{font-weight: 500; font-size: 1em; text-transform: uppercase;} 
+/*kursiv:Quelle*/ .txOrigin{font-weight: 400; font-size: 1em; font-style: oblique;   text-align: left;} 
 
-
+p{font-weight: 400; font-size: 1em; margin-top:1em; margin-bottom: 1em; text-align: justify; line-height: 1.6em;}
+strong {font-weight: 600;}
+em {font-weight: 600;}
 
 
 .mainColor1, .designColor { background-color: #74160D;}
@@ -61,11 +78,17 @@ p{font-weight: 400; font-size: 1em;}
 .mainColor4, .sonstigesColor { background-color: #844913;}
 .colorWhite {background-color: white;}
 
+.designCodeColor {
+  background: linear-gradient(to right,  #74160D 0%,#74160D 50%,#481323 50%,#481323 100%);
+}
+
+
 .width1 { width: 16.6% }
 .width2 { width: 32.8% }
 .width3 { width: 49.8% }
 .width4 { width: 66.4% }
 .width50 { width: 50% }
+.width100 { width: 100% }
 
 .left1 { left: 16.6% }
 .left2 { left: 32.8% }
@@ -75,6 +98,9 @@ p{font-weight: 400; font-size: 1em;}
 .left6 { left: 99.6% }
 
 .z100{ z-index: 100;} /* Nav */
+
+.padding40 {padding: 40px}
+.paddingTop40 {padding-top: 40px}
 
 
   /*   --------NAV--------   */
@@ -97,9 +123,7 @@ p{font-weight: 400; font-size: 1em;}
   top: 25px;
  
 }
-.navItem a {  
 
-}
 .txNavHeader {
   color: black;
   text-transform: uppercase;
@@ -162,14 +186,14 @@ https://jsfiddle.net/webtiki/MpXYr/5/ */
 .square:hover img{
 opacity: 0.1;
 }
-.designCodeColor {
-    background: linear-gradient(to right,  #74160D 0%,#74160D 50%,#481323 50%,#481323 100%);
-}
+
 .teaserTopic {
   left: 25px;
+  top: 1.5em;
 }
 .teaserTopic2 {
   left: calc(50% + 10px);
+  top: 1.5em;
 }
 .teaserPosLeft {
   left: 13%;
