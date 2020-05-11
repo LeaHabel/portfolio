@@ -1,29 +1,111 @@
-.firstPic {
-    max-width: 100%;
-    width: auto;
+.firstPicBox {
+    position: fixed;
+  /*   overflow: auto; */
+    width: 100vw;
     height: 80%;
-    left: 50%;
-    transform:translateX(-50%);
-    overflow: hidden;
 }
-.background{
+.anotherFirstPicBox{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+.firstPic {
+   
+    max-width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background{ /*scrollt über firstPic */
     background-color: white;
     width: 100%;
-    top: 80%;
-    
-    position: relative;
+    top: 85%;
+    position: absolute;
+    padding-bottom: 80px;
+
 }
 .layoutWrapper {
     left: 20%; 
     width: 60%; /* left + width = left bzw. "right" -> für gleichmaessige Seitenränder */
     top:2em;
     position: relative;
-    height: 1500px;
+    height: auto;
 }
-.firstText {
-    
+
+@media (max-width: 1150px){
+    .background{ /*scrollt über firstPic */
+        top: 80%;
+    }
 }
+@media (max-width: 1050px){
+    .background{ /*scrollt über firstPic */
+        top: 70%;
+    }
+}
+@media (max-width: 950px){
+    .background{ /*scrollt über firstPic */
+        top: 65%;
+    }
+}
+@media (max-width: 850px){
+    .background{ /*scrollt über firstPic */
+        top: 60%;
+    }
+}
+@media (max-width: 800px){
+    .background{ /*scrollt über firstPic */
+        top: 55%;
+    }
+}
+@media (max-width: 700px){
+    .background{ /*scrollt über firstPic */
+        top: 45%;
+    }
+}
+@media (max-width: 600px){
+    .background{ /*scrollt über firstPic */
+        top: 40%;
+    }
+}
+@media (max-width: 550px){
+    .background{ /*scrollt über firstPic */
+        top: 35%;
+    }
+}
+@media (max-width: 300px){
+    .background{ /*scrollt über firstPic */
+        top: 30%;
+    }
+}
+
+@media (min-width: 1250px){
+    .firstPic {
+        top:50%;
+         transform: translate(-50%, -50%);
+         position: absolute;
+     }
+
+}
+
+
+
+
 
 .borderColorGivenTake { border-color: #51A5AE}
 .bgColorGivenTake {background-color: #51A5AE;}
 .colorGivenTake {color: #51A5AE;}
+
+.textDetail {
+    position: relative;
+    padding: 40px;
+}
+.textNextTo {
+    left: 5%;
+   
+}
+.textAlone {
+    left: 0%;
+}
